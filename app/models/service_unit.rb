@@ -1,0 +1,2 @@
+class ServiceUnit < ApplicationRecord
+end

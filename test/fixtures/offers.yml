@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  offer_code: MyString
+  version: MyString
+  published_at: 2019-11-24 20:53:39
+
+two:
+  offer_code: MyString
+  version: MyString
+  published_at: 2019-11-24 20:53:39

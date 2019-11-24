@@ -1,0 +1,2 @@
+class CloudServicesProvider < ApplicationRecord
+end

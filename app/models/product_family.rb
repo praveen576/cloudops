@@ -1,0 +1,2 @@
+class ProductFamily < ApplicationRecord
+end

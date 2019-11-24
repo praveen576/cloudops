@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  offer_term: one
+  product: one
+  effective_from: 2019-11-24 21:07:47
+
+two:
+  offer_term: two
+  product: two
+  effective_from: 2019-11-24 21:07:47
