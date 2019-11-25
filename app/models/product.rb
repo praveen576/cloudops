@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-  belongs_to :product_family
+  belongs_to :product_family, required: false
 
   has_many :product_attributes
 
