@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191124155808) do
+ActiveRecord::Schema.define(version: 20191125163240) do
 
   create_table "cloud_services_providers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", limit: 20
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20191124155808) do
     t.bigint "term_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "offer_term_code", limit: 20
     t.index ["offer_id"], name: "index_offer_terms_on_offer_id"
     t.index ["term_id"], name: "index_offer_terms_on_term_id"
   end
@@ -81,6 +82,7 @@ ActiveRecord::Schema.define(version: 20191124155808) do
     t.bigint "product_family_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "service_code", limit: 20
     t.index ["product_family_id"], name: "index_products_on_product_family_id"
   end
 
@@ -113,14 +115,4 @@ ActiveRecord::Schema.define(version: 20191124155808) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "offer_term_poduct_attributes", "offer_term_products"
-  add_foreign_key "offer_term_products", "offer_terms"
-  add_foreign_key "offer_term_products", "products"
-  add_foreign_key "offer_terms", "offers"
-  add_foreign_key "offer_terms", "terms"
-  add_foreign_key "product_attributes", "products"
-  add_foreign_key "products", "product_families"
-  add_foreign_key "rate_infos", "currencies"
-  add_foreign_key "rate_infos", "offer_term_products"
-  add_foreign_key "rate_infos", "service_units"
 end

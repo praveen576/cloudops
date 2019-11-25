@@ -10,13 +10,13 @@ default: &default
 
 development:
   <<: *default
-  database: cloudops_dev
+  database: cloud_ops_dev
   pool: 10
 
 staging:
   <<: *default
-  database: cloudops_staging
+  database: cloud_ops_staging
 
 test:
   <<: *default
-  database: cloudops_testing_new
+  database: cloud_ops_testing_new
